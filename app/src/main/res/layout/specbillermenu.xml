@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:filterTouchesWhenObscured ="true"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/lay"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lycal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/borderhmground"
+
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_height="40dp"
+
+                android:layout_width="40dp"
+
+                android:layout_marginTop="5dp"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:background="@drawable/bg_red"
+
+                android:layout_alignRight="@+id/div1"
+
+                android:layout_marginRight="35dp"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <View
+                android:id="@+id/div1"
+                android:layout_width="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+
+
+
+                android:background="@color/textcolorcircle" />
+            <View
+                android:id="@+id/div2"
+                android:layout_width="30dp"
+
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+
+                android:layout_alignRight="@+id/tv"
+
+                android:layout_marginRight="45dp"
+
+                android:background="@color/textcolorcircle" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignRight="@+id/div2"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="@color/textcolorcircle"
+                android:textSize="20sp"
+                android:background="@drawable/bg_transparent"
+
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_height="40dp"
+
+                android:layout_width="40dp"
+
+                android:layout_marginTop="5dp"
+                android:text="3"
+                android:textColor="@color/textcolorcircle"
+                android:textSize="20sp"
+                android:background="@drawable/bg_transparent"
+
+                android:layout_alignLeft="@+id/div1"
+
+                android:layout_marginLeft="35dp"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <View
+                android:id="@+id/div3"
+                android:layout_width="30dp"
+
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+
+                android:layout_alignLeft="@+id/tv3"
+
+                android:layout_marginLeft="45dp"
+
+                android:background="@color/textcolorcircle" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_height="40dp"
+
+                android:layout_width="40dp"
+
+                android:layout_marginTop="5dp"
+                android:text="4"
+                android:textColor="@color/textcolorcircle"
+                android:textSize="20sp"
+                android:background="@drawable/bg_transparent"
+
+                android:layout_alignLeft="@+id/div3"
+
+                android:layout_marginLeft="35dp"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+android:visibility="gone"
+                android:layout_below="@+id/tv"
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Please choose a biller"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/lycal"
+
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rlag"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+android:layout_below="@+id/rlag"
+                android:divider="@color/divcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

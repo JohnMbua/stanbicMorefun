@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.shell-software:fab:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e985d15078d7e2059f687a45e6d039b/fab-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e985d15078d7e2059f687a45e6d039b/fab-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shell-software/fab/1.1.2/e8eb54f162d7aeb9c1f649364d7bc26eb32e996e/fab-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shell-software/fab/1.1.2/fe240d8c4ac516b967c9520142ac5675ef46f096/fab-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

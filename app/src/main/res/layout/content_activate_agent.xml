@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stanbicagent.ActivateAgent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured ="true"
+    tools:showIn="@layout/activity_activate_agent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="Proceed to activate the Agent app with the following details"/>
+    <LinearLayout
+
+        android:id="@+id/lyuspin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="1dip"
+
+
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1.5"
+            android:text="User ID"
+            android:textColor="@color/white" />
+
+        <EditText
+
+            android:layout_gravity="left|center"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+
+android:textColor="@color/white"
+            android:id="@+id/agentid"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:hint="User ID"
+android:textColorHint="@color/grey"
+            android:textSize="14sp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/nbkyellow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1.5"
+                android:text="OTP"
+                android:textColor="@color/black" />
+1
+            <EditText
+
+
+                android:id="@+id/agentphon"
+                android:layout_below="@+id/textView4"
+                android:textColor="@color/black"
+                android:digits="0123456789+"
+                android:ems="10"
+                android:maxLength="5"
+                android:inputType="numberPassword"
+                android:layout_margin="10dp"
+                android:layout_gravity="left|center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="OTP"
+                android:textColorHint="@color/grey"
+
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/nbkyellow" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1.5"
+                android:text="Attendant PIN"
+                android:textColor="@color/black" />
+
+            <EditText
+
+
+
+                android:id="@+id/agentpin"
+                android:layout_below="@+id/textView4"
+                android:layout_gravity="left|center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:ems="10"
+                android:maxLength="5"
+                android:inputType="numberPassword"
+                android:layout_margin="10dp"
+                android:hint="Attendant PIN"/>
+        </LinearLayout>
+
+</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_below="@+id/lyuspin"
+            android:id="@+id/resendotp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/mybutton"
+                android:padding="5dp"
+                android:text="NEXT"
+                android:filterTouchesWhenObscured ="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+android:layout_marginBottom="10dp"
+
+        android:id="@+id/mybutton"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+
+            android:text="Resend OTP?"
+            android:textSize="16sp"
+
+
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

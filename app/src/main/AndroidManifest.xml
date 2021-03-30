@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stanbicagent">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CLOUDPOS_EMV" />
+    <uses-permission android:name="android.permission.CLOUDPOS_MSR" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+    <uses-permission android:name="android.permission.CLOUDPOS_LED" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PINPAD" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_GET_PIN_BLOCK" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_MAC" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_ENCRYPT_DATA" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY" />
+    <uses-permission android:name="android.permission.CLOUDPOS_SAFE_MODULE_READONLY" />
+    <uses-permission android:name="android.permission.CLOUDPOS_SAFE_MODULE" />
+    <uses-permission android:name="android.permission.CLOUDPOS_SMARTCARD" />
+    <uses-permission android:name="android.permission.CLOUDPOS_CONTACTLESS_CARD" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".BTDeviceList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".InboxActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Inbox"
+            android:parentActivityName=".FMobActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".BluetoothPrinter"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Inbox" />
+        <activity
+            android:name=".IndivChartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Stats" />
+        <activity
+            android:name=".SelChartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Stats" />
+        <activity
+            android:name=".FMobActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ChangeAcNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Stats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetHelpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Get Help"
+            android:parentActivityName=".SignInActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.SignInActivity" />
+        </activity>
+        <activity
+            android:name=".AddProdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Stats" /> <!-- Register Service -->
+        <activity
+            android:name=".OldMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:noHistory="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+        <activity
+            android:name=".SignInActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Sign In"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FormActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Add Store" />
+        <activity
+            android:name=".StepActivity"
+            android:label="@string/title_activity_step"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".AdActivity"
+            android:label="@string/title_activity_ad"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ContactInfo"
+            android:label="Stanbic Bank Contact Centre"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".SendFeedback"
+            android:label="Send Feedback"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".FAQAct"
+            android:label="FAQ"
+            android:parentActivityName=".GetHelpActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.GetHelpActivity" />
+        </activity>
+        <activity
+            android:name=".ActivateAgent"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_activate_agent"
+            android:parentActivityName=".ActivateAgentBefore"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.ActivateAgentBefore" />
+        </activity>
+        <activity
+            android:name=".ActivateAgentBefore"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_activate_agent"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ActivateSecrQn"
+            android:label="Activate"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Chat with Support"
+            android:parentActivityName=".FMobActivity"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".ForgotPIN"
+            android:label="Forgot PIN"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ResetQns"
+            android:label="Reset Security Details"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".QuickGuide"
+            android:label="How to Activate"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ForceChangePin"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyBaseActivity" />
+        <activity android:name=".NL_CardWdlInqCard" />
+        <activity
+            android:name=".SupAgentActivity"
+            android:label="@string/title_activity_sup_agent"
+            android:theme="@style/MyMaterialTheme" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ddc9b130b64446df89c9ec45c2ab29cc2177522b" />
+
+        <activity android:name=".BluetoothPrinterTwo" />
+        <activity android:name=".USBPrintTwo" />
+        <activity
+            android:name=".MyPerfActivity"
+            android:parentActivityName=".FMobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".LogCompActivity"
+            android:parentActivityName=".FMobActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".ForceResetPin"
+            android:label="" />
+        <activity
+            android:name=".CommissionActivity"
+            android:parentActivityName=".FMobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".MinistatActivity"
+            android:parentActivityName=".FMobActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stanbicagent.FMobActivity" />
+        </activity>
+        <activity
+            android:name=".CashDepoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmCashDepoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionProcessingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfDepoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FTMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CashDepoTransActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmCashtransActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfDepoTransActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendOTBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmSendOTBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfSendOTBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmWithdrawalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AirtimeTransfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ConfirmAirtimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfAirtimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BillMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpecBillerMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetBillPaymentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CableTVActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmCableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfirmCableTVActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenAccActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenAccStepTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenAccUpPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenAccTestCameraActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".OpenAccCustPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenAccOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendOtherWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherWalletsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmOtherWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfOtherWalletsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalConfAccountOpening"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StateCollectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePinActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TestfaceDetector" />
+        <activity
+            android:name=".NL_WDLMenuActivity"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_Card_Wdl_InsCard"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_Card_Wdl_Conf_Activity"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_Card_Wdl_Agent_PIN"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_Card_Wdl_SelAcc"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_CardWdlTransAmountActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NL_Dep_MenuActivity" />
+        <activity android:name=".CardDepActivity" />
+        <activity
+            android:name=".NL_CEVA_Card_Trans_AgentPIN"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".NL_CEVA_CardTransfer_Amount_Activity"
+            android:theme="@style/MyMaterialTheme" />
+
+        <activity
+            android:name=".NL_CEVA_Card_Transfer_Conf_Activity"
+            android:theme="@style/MyMaterialTheme" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity android:name=".OpenAccBVN" />
+        <activity android:name=".OpenAccBVNConfirm" />
+        <activity
+            android:name="mf_test.CardReaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mf_test.MainActivity_NL"
+            android:screenOrientation="portrait" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

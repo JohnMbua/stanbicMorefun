@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured ="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dip"
+
+                android:orientation="vertical" >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:clickable="true"
+
+
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+
+
+                        >
+<!--<ImageView
+    android:id="@+id/img"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="centerCrop"
+    android:background="@drawable/home3"/>-->
+                        <TextView
+                            android:id="@+id/headl"
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:text="Borrowing"
+
+
+                            />
+                        <View
+                            android:id="@+id/div1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/txt_image_slider"
+
+                            android:layout_marginTop="7dp"
+
+
+                            android:background="@color/nbklightbrown" />
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="30dip"
+
+
+
+                            >
+                            <TextView
+                                android:id="@+id/bnamebc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dip"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C2415"
+
+                                android:text="Saved Contact:"
+
+
+                                />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+
+                    >
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

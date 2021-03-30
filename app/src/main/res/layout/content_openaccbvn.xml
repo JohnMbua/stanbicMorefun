@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stanbicagent.ActivateAgent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured ="true"
+    tools:showIn="@layout/activity_open_acc_bvn">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="Proceed to enter the customer BVN below"/>
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="1dip"
+
+
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1.5"
+            android:text="BVN"
+            android:textColor="@color/black" />
+
+        <EditText
+
+            android:layout_gravity="left|center"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+
+android:textColor="@color/black"
+            android:id="@+id/agentid"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:hint="BVN"
+android:textColorHint="@color/grey"
+            android:textSize="16sp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/nbkyellow"/>
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl3"
+        android:id="@+id/mybutton"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/mybutton"
+            android:padding="5dp"
+            android:text="NEXT"
+            android:filterTouchesWhenObscured ="true"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/mybutton"
+            android:layout_below="@+id/button2"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:text="OPEN ACCOUNT"
+            android:filterTouchesWhenObscured ="true"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

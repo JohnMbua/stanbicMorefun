@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
+    android:filterTouchesWhenObscured ="true"
+    android:elevation="5dp"
+    android:background="@drawable/stnbbackground"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+<ImageView
+android:layout_width="130dp"
+android:contentDescription="Logo"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:src="@drawable/newfmonielogo"/>
+</androidx.appcompat.widget.Toolbar>
+
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="75dp"
+    android:layout_height="110dp"
+
+    android:filterTouchesWhenObscured ="true"
+    android:background="#80ffffff"
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="2dp" />-->
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_centerHorizontal="true"
+
+
+            android:textSize="10sp"
+            android:text="Description"
+
+            android:textColor="#000000" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/nbklightbrown"
+            android:layout_marginTop="7dp"
+            android:layout_height="60dp" />
+
+
+
+    </RelativeLayout>
+</FrameLayout>

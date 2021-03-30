@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured ="true"
+   >
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/newtoolbarhome" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lingen"
+        android:weightSum="100"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="7dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:onClick="swithlist"
+                android:visibility="gone"
+                android:padding="2dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="To List"
+
+                /></RelativeLayout>
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lyid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="25"
+                android:orientation="horizontal"
+
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl1"
+                    android:gravity="center"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rectangle465"
+
+                    >
+
+
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transfe"
+                    android:layout_marginRight="30dp"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/imgt"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/imgt"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle466"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/group6"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/imgpaybills"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Withdraw"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/imgpaybills"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyid2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+
+                android:layout_weight="25"
+
+                android:orientation="horizontal"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle468">
+
+                    <ImageView
+                        android:id="@+id/imgwithdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/group5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgwithdraw"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:text="Deposit" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle467"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/group4"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/imgtdep"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Airtime"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/imgtdep"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+
+                android:layout_weight="25"
+
+                android:orientation="horizontal"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle470">
+
+                    <ImageView
+                        android:id="@+id/imgtair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/approve_invoice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgtair"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:text="Pay Bills" />
+
+                    <TextView
+                        android:id="@+id/txt_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_marginTop="10dp"
+                        android:letterSpacing="0.07"
+                        android:text="Airtime"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/rlopenaccinside"
+    android:background="@drawable/rectangle469"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/account"
+
+                        android:id="@+id/imgtacc"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open Account"
+                        android:paddingTop="17dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/imgtacc"
+                        android:layout_centerHorizontal="true"
+                        />
+</RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/rlagac"
+
+                    android:layout_weight="0.5"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/agaccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/callcenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/agaccount"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp"
+                        android:text="Agent Account"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/rlcommwal"
+
+                    android:layout_height="50dp">
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/grey"
+                        android:layout_height="50dp"></View>
+                    <ImageView
+                        android:id="@+id/commwall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp"
+                        android:background="@drawable/percentage"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/commwall"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp"
+                        android:text="Commission Account"/>
+                </RelativeLayout>
+                <Button
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:id="@+id/agacc"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Agent Account"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rectangle375"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/comacc"
+                    android:textColor="@color/white"
+                    android:text="Commision Wallet"
+                    android:background="@drawable/rectangle375"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

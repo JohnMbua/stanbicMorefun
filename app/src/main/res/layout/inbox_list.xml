@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured ="true"
+
+   >
+
+
+    <LinearLayout
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+
+
+
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Stanbic BankTransfer transaction of 2400 N \n To 301232 \n From  345677"
+                android:textColor="@color/nbkyellow"
+                android:textSize="15sp" />
+            <Button
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+android:id="@+id/btncontext"
+
+android:visibility="gone"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/txtto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+android:layout_below="@+id/txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="To 301232 \n From  345677"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/txtto"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ben Name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/vw"
+             android:layout_marginTop="10dp"
+android:layout_below="@+id/txtref"
+                android:background="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/vw"
+                android:layout_marginTop="10dp"
+
+                android:text="Description"
+                android:textColor="#3C2415"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/vw"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textColor="#3C2415"
+                android:textSize="15sp"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/txtstatus"
+                android:layout_marginTop="5dp"
+                android:text="SHARE RECEIPT"
+                android:layout_marginRight="20dp"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:id="@+id/btnshr"
+                android:background="@drawable/capsuleblue"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/txtstatus"
+                android:id="@+id/btnrec"
+                android:background="@drawable/capsuleblue"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:focusable="true"
+                android:text="REPORT ISSUE"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

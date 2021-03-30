@@ -1,0 +1,403 @@
+<resources>
+    <string name="app_name">Stanbic Agent</string>
+
+    <string name="conn_error">There was an error connecting to server.Please wait as we look into this</string>
+    <string name="forceout">Due to network connection issues,we will log you out for smoother future experience.</string>
+    <string name="forceouterr">Network error</string>
+    <string name="sendname">Sender Name</string>
+    <string name="sendnum">Phone Number</string>
+    <string name="pintext">Agent PIN</string>
+    <string name="title_tab_start_date">Start Date</string>
+    <string name="ttile_tab_end_date">End Date</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+    <string name="appupd_verstitle">New Version Available</string>
+    <string name="appupd_vers">There is a newer version available for download! Please update the app by visiting Google Play Store.</string>
+
+
+    <string name="camera_denied">Camera Denied</string>
+    <string name="storage_denied">Storage Denied</string>
+    <string-array name="nav_drawer_items">
+        <item>Open Account</item>
+        <item>Banking Information</item>
+        <item>Products</item>
+
+        <item>Invite A Friend</item>
+        <item>NChat</item>
+        <item>FAQ</item>
+        <item>History</item>
+        <item>My  Cards</item>
+        <item>Funds Transfer</item>
+        <item>Payment Services</item>
+        <item>Airtime</item>
+        <item>Personalise Menu .....</item>
+
+    </string-array>
+    <string-array name="time">
+        <item>9.40 am</item>
+        <item>12:00 pm</item>
+        <item>2:45pm</item>
+        <item>7.00pm</item>
+        <item>9.45pm</item>
+
+    </string-array>
+
+    <string-array name="myagents">
+        <item>Ikorodu Shop</item>
+        <item>ICM 1st floor</item>
+        <item>Lekki Phase 1 Admiralty</item>
+
+
+    </string-array>
+    <string-array name="malesalut">
+        <item>Select Title</item>
+        <item>Mr.</item>
+
+        <item>Dr.</item>
+
+
+    </string-array>
+    <string-array name="femsalut">
+        <item>Select Title</item>
+
+        <item>Mrs.</item>
+        <item>Ms.</item>
+        <item>Dr.</item>
+
+
+    </string-array>
+
+    <string-array name="salut">
+        <item>Select Title</item>
+        <item>Mr.</item>
+
+        <item>Dr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+        <item>Dr.</item>
+
+
+    </string-array>
+
+
+    <string-array name="branches">
+        <item>Aba</item>
+        <item>Abeokuta</item>
+        <item>Agbor</item>
+        <item>Apapa</item>
+        <item>Ijori</item>
+
+        <item>Suleja</item>
+
+        <item>Bauchi</item>
+
+
+    </string-array>
+    <string-array name="mar_status">
+        <item>Select Marital Status</item>
+        <item>Married</item>
+        <item>Single</item>
+    </string-array>
+    <string-array name="products">
+        <item>Clarks Shoes</item>
+        <item>Loafers</item>
+
+    </string-array>
+    <string-array name="offtype">
+        <item>Flat</item>
+        <item>Percentile</item>
+        <item>Location</item>
+
+    </string-array>
+    <string-array name="complaintty">
+        <item>POS</item>
+        <item>New Feature Suggestions</item>
+
+    </string-array>
+    <string-array name="states">
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Balyesa</item>
+    </string-array>
+    <string-array name="lga">
+        <item>Aba North</item>
+        <item>Arochukwu</item>
+        <item>Aba South</item>
+        <item>Bende</item>
+        <item>Ikwuano</item>
+        <item>Isiala-Ngwa North</item>
+        <item>Isiala-Ngwa South
+</item>
+        <item>Obi Ngwa
+</item>
+    </string-array>
+    <string-array name="banks">
+        <item>Access Bank</item>
+        <item>Citi Bank</item>
+        <item>Union Bank</item>
+        <item>Keystone Bank</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+    <string-array name="savedcon">
+        <item>Steve Kiprop</item>
+        <item>Angela Wanjiku</item>
+    </string-array>
+
+    <string-array name="currf">
+
+
+        <item>USD</item>
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>ZAR</item>
+    </string-array>
+
+    <string-array name="ugroup">
+
+        <item>Supevisor</item>
+        <item>Staff</item>
+
+    </string-array>
+    <string-array name="netop">
+        <item>Airtel</item>
+        <item>Etisalat</item>
+        <item>GLO</item>
+        <item>MTN</item>
+
+
+    </string-array>
+
+
+    <string-array name="gender">
+        <item>Please Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="dombank">
+
+        <item>KCB</item>
+        <item>Equity Bank</item>
+        <item>NIC Bank</item>
+    </string-array>
+
+    <string name="hello">Choose a sample</string>
+
+    <string name="title_tutorial_wizard">Tutorial Wizard</string>
+    <string name="title_form_wizard">Form Wizard</string>
+    <string-array name="branch">
+
+        <item>Ongata Rongai</item>
+        <item>Moi Avenue</item>
+        <item>NIC Bank</item>
+    </string-array>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <integer-array name="nav_drawer_icons">
+
+
+    </integer-array>
+    <integer-array name="nav_pad_icons">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>0</item>
+        <item>0</item>
+
+        <item>0</item>
+
+        <item>0</item>
+    </integer-array>
+
+
+    <!-- Titles -->
+
+    <!-- default values -->
+
+    <!-- Hints -->
+
+    <!-- other -->
+    <string name="title_activity_recent_chant_list">Chat List</string>
+
+    <!-- Error Messages -->
+    <string name="error_no_internet_connection">No Internet Connection</string>
+
+    <!-- chat menu -->
+
+    <!-- options -->
+
+    <!-- Setting -->
+
+    <!-- status -->
+
+    <!--  -->
+
+    <string name="title_activity_map_host">MapHostActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_step">StepActivity</string>
+
+
+    <string name="ok">Ok</string>
+    <string name="password">Password</string>
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="password_description">Enter your store password to continue</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="use_password">Use password</string>
+
+    <string name="title_activity_get_help">GetHelpActivity</string>
+    <string name="title_activity_ad">AdActivity</string>
+    <string name="title_activity_activate_agent">Activate</string>
+    <string name="title_activity_movie_details">Movie Details</string>
+    <string name="title_activity_confirm_movie">Confirm Movie</string>
+    <string name="title_activity_sup_agent">SupAgentActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_print"> Click printing</string>
+    <string name="text_clear">Clean </string>
+    <string name="text_tip"> Please sign at below space, then click printing...</string>
+    <string name="menu_pboc">PBOC</string>
+    <string name="menu_eleccash"> E-cash balance</string>
+    <string name="menu_apdu">CPUCard(APDU)</string>
+    <string name="menu_carddetail"> Card transaction record</string>
+    <string name="menu_loadkek">Load KEK</string>
+    <string name="menu_loadmasterkey">Load master key</string>
+    <string name="menu_loadworkkey">Load working key</string>
+    <string name="menu_calpin">Calculate PIN</string>
+    <string name="menu_calmac"> Calculate MAC</string>
+    <string name="menu_caltrack"> calculte magnetic track cryptograph</string>
+    <string name="menu_caldata"> data encryption and decryption</string>
+    <string name="menu_capk">IC public key download(CAPK)</string>
+    <string name="menu_aid">IC data download(AID)</string>
+    <string name="menu_beep">Buzzer</string>
+    <string name="menu_print">Print</string>
+    <string name="menu_devicesn">Read device SN</string>
+    <string name="menu_version">Check version</string>
+    <string name="menu_codebar">Read 1D barcode</string>
+    <string name="menu_pinkeybord">PinPad</string>
+    <string name="menu_pinkeybord2">Password keypad(Controller location)</string>
+    <string name="menu_sign"> Manual signature </string>
+    <string name="menu_signpass"> signature-free and password-free</string>
+    <string name="menu_tusn">Series number encrypt</string>
+    <string name="menu_pboc2">PBOC2(contain all callback show)</string>
+    <string name="menu_onlineauth">secondary authorization</string>
+    <string name="menu_setmid">set up manufacturer id</string>
+    <string name="menu_chooselan"> Language(Language)</string>
+    <string name="M1CardTest">M1 Card</string>
+    <string name="msg_rest"> Save succeed, take effect after restart</string>
+    <string name="msg_title">prompts</string>
+    <string name="msg_running">In progress, please wait</string>
+    <string name="msg_scanning">Scanning, please wait</string>
+    <string name="msg_printing">Printing</string>
+    <string name="msg_nopaper">Printer out of paper, please load paper</string>
+    <string name="msg_done">Download finished</string>
+    <string name="msg_calresult">Calculate result:</string>
+    <string name="label_result">Result:</string>
+    <string name="label_balance">Balance:</string>
+    <string name="msg_nothing">No content</string>
+    <string name="msg_content">Content:</string>
+    <string name="msg_length">Length:</string>
+    <string name="procret">Result:</string>
+    <string name="cardtype">Card using method:</string>
+    <string name="pan">PAN:</string>
+    <string name="expdata">Card valid date:</string>
+    <string name="servicecode">Service code:</string>
+    <string name="track1len">First magnetic track length:</string>
+    <string name="track1">First mangnetic track information:</string>
+    <string name="track2len"> Second magnetic track length:</string>
+    <string name="track2">Second magnetic track information:</string>
+    <string name="track3len">Third magnetic track length:</string>
+    <string name="track3">Thrid magnetic track information:</string>
+    <string name="pansn">Card series number:</string>
+    <string name="tlvdata">IC card data:</string>
+    <string name="macdata">MAC data:</string>
+    <string name="randommac">MAC random number:</string>
+    <string name="randomtrack"> magnetic track radom number:</string>
+    <string name="msg_sn">device SN:</string>
+    <string name="msg_version"> current version:</string>
+    <string name="activity_title_mid">YDemo|depend on YSDK</string>
+    <string name="msg_succ">Success</string>
+    <string name="msg_fail">Fail</string>
+    <string name="label_loadpin"> Load PIN password:</string>
+    <string name="label_loadmac">Load MAC password:</string>
+    <string name="label_loadtrack">Load magnetic track password:</string>
+    <string name="msg_icorrfid">Please insert card or wave card...</string>
+    <string name="msg_rfcard">Please wave card...</string>
+    <string name="msg_readfail_retry">Reading failed, please try again</string>
+    <string name="label_onlineauth">Secondary authorization:</string>
+    <string name="msg_notinput">No password entered</string>
+    <string name="msg_checklength">The password length is not legal</string>
+    <string name="msg_password">Password(</string>
+    <string name="btn_ok">OK</string>
+    <string name="login_devices">Login devices</string>
+    <string name="menu_led">LED</string>
+    <string name="menu_scanner">Scanner</string>
+    <string name="menu_serialport">SerialPort</string>
+    <string name="menu_ic_card_reader">ICCard Reader</string>
+    <string name="menu_mag_card_reader">MagCard Reader</string>
+    <string name="menu_randomnumber">Random Number</string>
+    <string name="menu_m1card">M1Card</string>
+    <string name="menu_felica">FELICA Card</string>
+    <string name="device_info">Device Info</string>
+    <string name="install_app">Install app</string>
+    <string name="vendorInfo">Vendor: </string>
+    <string name="model">MODEL: </string>
+    <string name="systemVer">System version: </string>
+    <string name="serialNo">Serail No: </string>
+    <string name="basechip">Basechip:</string>
+    <string name="tusn">Tusn =</string>
+    <string name="clear_capk_aid">clear AID and CAPK</string>
+    <string name="hint_password">IP</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="Server_header">Server</string>
+    <string name="Host_header">Host Server</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="ip">Ip:</string>
+    <string name="port">Port:</string>
+    <string name="url">Net Url:</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

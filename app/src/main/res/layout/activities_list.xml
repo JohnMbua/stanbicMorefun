@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured ="true"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+
+            android:text="Ben Name"
+
+
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Description"
+
+            />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#3C2415"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/ic_right"/>
+
+
+    </RelativeLayout>
+</FrameLayout>

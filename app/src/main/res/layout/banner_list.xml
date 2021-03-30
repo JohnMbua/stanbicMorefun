@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:descendantFocusability="beforeDescendants"
+    android:filterTouchesWhenObscured="true"
+    android:paddingLeft="1dp"
+
+
+    android:paddingRight="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="1dip"
+
+        android:clickable="true"
+
+
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/phn"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvvb"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="Nat E-lock"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvvb"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="10dp"
+
+                android:text="Enjoy Free Contacts Backup Service Today "
+
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/natelock"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:civ_border_color="@color/nbkdarkbrown"
+                app:civ_border_width="2dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

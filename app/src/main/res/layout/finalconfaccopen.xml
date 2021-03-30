@@ -1,0 +1,442 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:filterTouchesWhenObscured ="true"
+ >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view023"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:clickable="true"
+                        android:visibility="gone"
+
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp">
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+
+
+                            >
+
+                            <TextView
+                                android:id="@+id/llog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+
+                                android:text="Last Login"
+                                android:textColor="#3C2415"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/lastlog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="10dip"
+                                android:text="2016-08-22 12:13"
+                                android:textColor="#3C2415"
+                                android:textStyle="bold"
+
+                                />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:clickable="true"
+
+                        android:visibility="gone"
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp">
+
+                        <LinearLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dip"
+                            android:paddingLeft="10dip"
+                            android:paddingRight="10dip"
+                            android:paddingTop="10dip"
+
+
+                            >
+
+
+                            <RelativeLayout
+
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+
+                                >
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/tdisp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dip"
+                                    android:text="Display Name:"
+                                    android:textColor="#3C2415"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tdispedit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5dip"
+                                    android:text="Set"
+                                    android:textColor="@color/blue"
+
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tdispname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5dip"
+                                    android:text="N/A"
+                                    android:textColor="#3C2415"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/stsign"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dip"
+                                    android:text="Star Sign:"
+                                    android:textColor="#3C2415"
+                                    android:textStyle="bold" />
+
+
+                                <Spinner
+                                    android:id="@+id/stars"
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentRight="true"></Spinner>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+
+                                >
+
+                                <CheckBox
+                                    android:id="@+id/astcheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Astrology Off" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+android:layout_weight="75"
+                        android:id="@+id/receipt"
+                        android:layout_height="0dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view34"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+
+
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dip"
+                            android:clickable="true"
+                            card_view:cardBackgroundColor="@color/white"
+
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="5dp">
+
+                            <LinearLayout
+
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="10dip"
+                                android:paddingLeft="10dip"
+                                android:paddingRight="10dip"
+                                android:paddingTop="10dip"
+
+
+                                >
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rl5">
+                                    <ImageView
+                                        android:id="@+id/imgg"
+                                        android:layout_width="185dp"
+                                        android:background="@drawable/accessbank"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="40dp" />
+
+                                    <TextView
+                                        android:id="@+id/textView1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgg"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="5dp"
+                                        android:text="ACCOUNT OPEN SUCCESSFUL"
+                                        android:textColor="@color/fab_material_green_900"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rlreceipt"
+
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/textViewcv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dip"
+                                        android:text="Account Number:"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="@dimen/textsize"
+                                        android:textColor="@color/black"
+                                        android:layout_gravity="left|center"
+                                        android:layout_weight="1"
+
+
+                                        />
+                                    <TextView
+                                        android:id="@+id/recip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/textViewcv"
+                                        android:layout_marginTop="5dip"
+                                        android:layout_centerHorizontal="true"
+
+                                        android:textSize="14sp"
+                                        android:text="N/A"
+                                        android:textColor="@color/nbkyellow"
+
+                                        />
+
+                                </RelativeLayout>
+
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                       android:layout_below="@+id/receipt"
+                        android:layout_weight="25"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+
+
+                            android:orientation="horizontal"
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:id="@+id/rlsave"
+
+                                android:layout_weight="0.5"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:id="@+id/agaccount"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/download3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/agaccount"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="12sp"
+                                    android:text="Save to Gallery"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:id="@+id/rlshare"
+
+                                android:layout_height="50dp">
+                                <View
+                                    android:layout_width="1dp"
+                                    android:background="@color/grey"
+                                    android:layout_height="50dp"></View>
+                                <ImageView
+                                    android:id="@+id/commwall"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="12sp"
+                                    android:background="@drawable/sharethislogo"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/commwall"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="12sp"
+                                    android:text="Share Receipt"/>
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:id="@+id/reportiss"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:visibility="gone"
+                                android:text="BLUETOOTH PRINT"
+                                android:textColor="@color/white"
+                                android:background="@drawable/rectangle375"
+                                />
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:id="@+id/share_image"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+                                android:text="SHARE RECEIPT"
+                                android:background="@drawable/rectangle375"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/rl5"
+
+                           android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:background="@drawable/mybutton"
+                                android:padding="5dp"
+                                android:text="OK"
+
+                                android:filterTouchesWhenObscured ="true"
+
+                                android:textColor="@color/white" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

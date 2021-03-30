@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured ="true"
+    tools:context="com.stanbicagent.CommissionActivity">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+
+            android:background="@color/white"
+            app:theme="@style/ToolbarStyle">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="130dp"
+                        android:contentDescription="Logo"
+
+                        android:layout_height="30dp"
+
+                        android:layout_marginRight="60dp"
+                        android:src="@drawable/newfmonielogo"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+
+                        android:layout_marginRight="20dp"
+
+                        android:background="@drawable/calendaricon"
+                        android:layout_below="@+id/textView7"
+
+
+
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <include layout="@layout/commreport" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured ="true"
+    android:id="@+id/lay"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view29"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            card_view:cardBackgroundColor="@color/colorPrimary"
+
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/textV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Your Requests For Bank Visit"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ListView
+            android:id="@+id/lv"
+
+android:layout_below="@+id/card_view29"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            ></ListView>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:id="@+id/rlmakereq"
+            android:background="@color/nbkyellow"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="MAKE REQUEST FOR BANK VISIT"/>
+        </RelativeLayout>
+  </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.testkevinapp.MainActivity" >
+
+
+
+    <item
+        android:id="@+id/inbox"
+        android:title="Inbox"
+        android:icon="@drawable/newinbox"
+        android:orderInCategory="2"
+        android:menuCategory="secondary"
+        app:showAsAction="ifRoom"
+        />
+ <!--   <item
+        android:id="@+id/myprof"
+        android:title="My Profile"
+        android:icon="@drawable/ic_myprofile"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"
+        app:showAsAction="ifRoom"
+        />-->
+   <!-- <item
+        android:id="@+id/signout"
+        android:title="Sign Out"
+      
+        app:showAsAction="never"
+    />-->
+ 
+
+ 
+   
+
+</menu>

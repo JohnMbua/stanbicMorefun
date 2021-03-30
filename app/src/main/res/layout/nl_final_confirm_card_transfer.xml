@@ -1,0 +1,553 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/whole_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="77">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dip"
+                        android:clickable="true"
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dip"
+                            android:paddingTop="10dip"
+                            android:paddingRight="10dip"
+                            android:paddingBottom="10dip">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgg"
+                                    android:layout_width="160dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/newfmonielogo" />
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgg"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp"
+                                    android:text="TRANSACTION SUCCESSFUL"
+                                    android:textColor="@color/fab_material_green_900"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewcv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginTop="5dip"
+                                    android:layout_weight="1"
+                                    android:text="Recipient Name:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txt_ben_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/textViewcv"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dip"
+                                    android:text="N/A"
+                                    android:textColor="@color/nbkyellow"
+                                    android:textSize="13sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewnb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:text="Beneficiary A/c:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/textViewnb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="10dip"
+                                    android:text=""
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/text_view_card_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Card Number:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txtcard_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="15dip"
+                                    android:text=""
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/text_view_card_holder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Holder Name:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txtcard_holder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="15dip"
+                                    android:text=""
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlem"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewrd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Amount:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txtamount_disp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="15dip"
+                                    android:text=""
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlid"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/textViewas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Id Number:"
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/textViewasd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="15dip"
+                                    android:text="N/A"
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlfee"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/textViewfee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:text="Fee:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txtfee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="10dip"
+                                    android:text="\u20A6 0.00"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlgend"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:text="Narration:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/textViewrr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="10dip"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/sendernam"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dip"
+                                    android:text="Sender Name:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txt_sendnammm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5dip"
+                                    android:text="kkK"
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlsendnum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/sendernumm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:text="Sender Number:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txt_sendno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="10dip"
+                                    android:text=""
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlref"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewrefcd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:text="Ref Code:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize" />
+
+                                <TextView
+                                    android:id="@+id/txt_ref_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="10dip"
+                                    android:text="N/A"
+                                    android:textColor="#3C2415"
+                                    android:textSize="@dimen/textsize" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rldatet"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textdatet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Date \u0026 Time:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/newtextsize" />
+
+                                <TextView
+                                    android:id="@+id/textfinaldatet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="15dip"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/newtextsize" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="25"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="15"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlsave"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5">
+
+                            <ImageView
+                                android:id="@+id/agaccount"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/download3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/agaccount"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Save to Gallery"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlshare"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey" />
+
+                            <ImageView
+                                android:id="@+id/commwall"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/sharethislogo"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/commwall"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Share Receipt"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlprint"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey" />
+
+                            <ImageView
+                                android:id="@+id/print_agent"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/print_receipt"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/print_agent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Agent Receipt"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/reportiss"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rectangle375"
+                            android:text="BLUETOOTH PRINT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/share_image"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rectangle375"
+                            android:text="SHARE RECEIPT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="15">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/nbkyellow"
+                            android:padding="5dp"
+                            android:text="OK"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

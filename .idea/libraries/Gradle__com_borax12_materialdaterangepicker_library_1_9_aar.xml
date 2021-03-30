@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.borax12.materialdaterangepicker:library:1.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f4e06f1283d028d91b4947d31bb9f96/jetified-library-1.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f4e06f1283d028d91b4947d31bb9f96/jetified-library-1.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.borax12.materialdaterangepicker/library/1.9/98fa0a15b5e05db7f90f47a80522077a3d38a84d/library-1.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.borax12.materialdaterangepicker/library/1.9/bfa8d111bc14855ee8917f28f009d00ff6410cd2/library-1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

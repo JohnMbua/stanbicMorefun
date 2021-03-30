@@ -1,0 +1,23 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+
+-verbose
+-optimizations !code/simplification/arithmetic,!field
+-ignorewarnings
+-keep class cn.pedant.** { *; }
+-dontwarn org.apache.lang.**
+-dontwarn org.apache.lang.**
+-dontwarn com.samsung.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.slf4j.**
+-dontwarn com.special.**
+-dontwarn com.squareup.**
+-dontwarn com.ogaclejapa.**
+-dontwarn com.google.android.**
+-dontwarn org.xml.**
+-dontwarn javax.xml.**
+-dontwarn org.apache.directory.**
+-dontwarn com.github.afollestad
+-keepattributes SourceFile,LineNumberTable

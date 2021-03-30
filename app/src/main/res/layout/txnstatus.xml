@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured ="true"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:clickable="true"
+        android:filterTouchesWhenObscured ="true"
+
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+
+
+            >
+            <RelativeLayout
+                android:id="@+id/rlag"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="TRANSACTION STATUS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+
+                <TextView
+                    android:id="@+id/txtref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="@color/colorPrimary" />
+                <TextView
+                    android:id="@+id/txtstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/txtref"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/nbkyellow" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

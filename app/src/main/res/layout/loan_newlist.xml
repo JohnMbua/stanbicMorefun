@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:filterTouchesWhenObscured ="true"
+
+    android:descendantFocusability="beforeDescendants">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:orientation="vertical" >
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3C2415"
+
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="Patrick Kemboi"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </LinearLayout>-->
+            <LinearLayout
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+
+
+                >
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/lodsc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:textStyle="bold"
+                        android:text="N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/lsd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:text="N/A"
+
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/sbpidk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft = "true"
+                        android:textStyle="bold"
+                        android:text=" N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/vv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dip"
+                        android:layout_alignParentRight = "true"
+                        android:text="N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:layout_marginTop="7dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/bnameas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#3C2415"
+                        android:text="Loan Balance"
+
+
+                        />
+                    <TextView
+                        android:id="@+id/vcd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"
+                        android:text="Loan Amount:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:id="@+id/div1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/txt_image_slider"
+
+                    android:layout_marginTop="7dp"
+
+
+                    android:background="@color/nbklightbrown" />
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/vvas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_alignParentLeft = "true"
+                        android:text="N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415" />
+
+                    <TextView
+                        android:id="@+id/sbpid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight = "true"
+                        android:text="N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+                </RelativeLayout>
+                <!--<RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/vcdh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Interest Rate:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        />
+                    <TextView
+                        android:id="@+id/bname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        android:text="Loan Ac/No: "
+
+
+                        />
+
+                </RelativeLayout>-->
+
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/txt_image_slider"
+
+                    android:layout_marginTop="7dp"
+
+
+                    android:background="@color/nbklightbrown" />
+
+
+
+
+
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/vcd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        android:text="Period:"
+                        />
+                    <TextView
+                        android:id="@+id/vv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_alignParentRight = "true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        android:text=" N/A"
+
+
+                        />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/vcd3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        android:text="M. Installment:"
+                        />
+                    <TextView
+                        android:id="@+id/vv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_alignParentRight = "true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+                        android:text=" N/A"
+
+
+                        />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/div3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/txt_image_slider"
+
+                    android:layout_marginTop="7dp"
+
+
+                    android:background="@color/nbklightbrown" />
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/df"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:textStyle="bold"
+                        android:text="13th August 2015"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/ldf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:text="Next Due Date"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

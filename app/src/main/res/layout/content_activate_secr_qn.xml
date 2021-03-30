@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stanbicagent.ActivateSecrQn"
+    android:background="@color/white"
+    android:filterTouchesWhenObscured ="true"
+    tools:showIn="@layout/activity_activate_secr_qn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_below = "@+id/container_toolbar"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical" >
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:paddingBottom="10dip"
+
+                    >
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:visibility="gone"
+
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/bname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415"
+                            android:text="Select Account Type"
+
+
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tdispedit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginLeft="15dip"
+
+                            android:text="What are the Account Types?"
+                            android:textStyle="bold"
+
+                            android:textColor="@color/blue" />
+
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+android:layout_marginTop="10dp"
+                        android:id="@+id/lylcal"
+
+                        android:orientation="vertical" >
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="Proceed to activate the Agent app with the following details"/>
+
+
+                    </LinearLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scqn1"
+
+                            android:textColor="@color/colorPrimary"
+                            android:layout_centerHorizontal="true"
+                            android:text="Security Question 1?"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_layout_password"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/scqn1"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/user_id2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:hint="Security Answer">
+                                <requestFocus />
+                            </EditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scqn2"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_centerHorizontal="true"
+                            android:text="Security Question 2?"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_lksl"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/scqn2"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/user_id29"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textColorHint="@color/colorPrimary"
+                                android:hint="Security Answer 2" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scqn3"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_centerHorizontal="true"
+                            android:text="Security Question 3?"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_layout_password2"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/scqn3"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/user_id232"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textColorHint="@color/colorPrimary"
+                                android:hint="Security Answer 3" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+
+
+
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="15dip"
+                        android:background="@color/nbkyellow"
+                        android:filterTouchesWhenObscured ="true"
+                        android:textColor="@color/white"
+                        android:text="Finish" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

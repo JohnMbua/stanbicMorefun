@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    android:filterTouchesWhenObscured ="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stanbicagent.ContactInfo"
+    tools:showIn="@layout/activity_contact_info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Call Us:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/cllus"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/cllus"
+        android:text="Local hotline 0800 720 044"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/phonenumber2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/phonenumber"
+        android:text="International hotline 254203268888"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/phonenumber3"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/phonenumber2"
+        android:text="Webchat "
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Mail Us:"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/phonenumber3"
+        android:id="@+id/mail"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mailus"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/mail"
+
+        android:text="customercare@stanbic.com"
+
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

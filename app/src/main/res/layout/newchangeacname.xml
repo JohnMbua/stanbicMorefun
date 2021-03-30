@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"  >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:textStyle="bold"
+                        android:text="Profile"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textcolorcircle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dip"
+                            android:paddingRight="10dip"
+                            android:paddingBottom="10dip"
+                            android:paddingTop="10dip">
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/textViewnb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Account Name:"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textcolorcircle" />
+                                <TextView
+                                    android:id="@+id/textViewnb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_alignParentRight = "true"
+                                    android:text="Olufemi Adewale"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textcolorcircle" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/textViewcv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Mobile Number:"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textcolorcircle" />
+                                <TextView
+                                    android:id="@+id/textViewcvv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_alignParentRight = "true"
+                                    android:text="+234 811 1111"
+                                    android:textSize="12sp"
+                                    android:textColor="#3C2415" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/rlem">
+                                <TextView
+                                    android:id="@+id/textViewrd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:text="Email"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textcolorcircle" />
+                                <TextView
+                                    android:id="@+id/textViewrrs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dip"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_alignParentRight = "true"
+                                    android:text="agentwale@gmail.com"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/textcolorcircle"/>
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="5dp">
+                            </View>
+                            <LinearLayout
+                                android:id="@+id/change_pin_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/changepin" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textcolorcircle"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="Change Current PIN"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="5dp">
+                            </View>
+
+                            <LinearLayout
+                                android:id="@+id/update_pos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/ic_upload" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textcolorcircle"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="Update POS Application"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="5dp">
+                            </View>
+
+                           <!-- <LinearLayout
+                                android:id="@+id/connectivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/connectivity" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textcolorcircle"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="Connectivity"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="5dp">
+                            </View>
+
+                            <LinearLayout
+                                android:id="@+id/help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/help" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textcolorcircle"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="Help"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="5dp">
+                            </View>-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

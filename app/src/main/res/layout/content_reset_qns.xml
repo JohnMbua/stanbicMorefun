@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:filterTouchesWhenObscured ="true"
+    tools:showIn="@layout/activity_reset_qns">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="0dp"
+            android:layout_weight="1"  >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/layl"
+
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/lylcal"
+
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/rlag"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Enter two new security questions and the associated answers"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+                        <LinearLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="1dip"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_weight="1"
+                                    android:text="Question"
+                                    android:textColor="@color/black" />
+
+                                <EditText
+                                    android:id="@+id/qnn"
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left|center"
+                                    android:hint="Enter question 1"
+                                    android:textSize="14sp"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/divcolor" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="45dp">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="left|center"
+                                    android:textColor="@color/black"
+                                    android:text="Answer"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:id="@+id/cname"
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left|center"
+                                    android:hint="Enter the answer"
+                                    android:textSize="14sp"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="1dip"
+                            android:background="@color/white"
+
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_weight="1"
+                                    android:text="Question"
+                                    android:textColor="@color/black" />
+
+                                <EditText
+                                    android:id="@+id/qnnn"
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left|center"
+                                    android:hint="Enter question 2"
+                                    android:textSize="14sp"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/divcolor" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="45dp">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="left|center"
+                                    android:textColor="@color/black"
+                                    android:text="Answer"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:id="@+id/cname2"
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left|center"
+                                    android:hint="Enter the answer"
+                                    android:textSize="14sp"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/divcolor" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="45dp">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="left|center"
+                                    android:textColor="@color/black"
+                                    android:text="OTP"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:id="@+id/otp"
+                                    android:inputType="numberPassword"
+                                    android:maxLength="6"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left|center"
+                                    android:hint="Enter OTP"
+                                    android:textSize="14sp"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_below="@+id/rl5"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:background="@drawable/mybutton"
+                                android:padding="5dp"
+                                android:text="Save"
+                                android:filterTouchesWhenObscured ="true"
+                                android:layout_marginTop="10dip"
+                                android:layout_marginBottom="10dip"
+                                android:textColor="@color/colorPrimary" />
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

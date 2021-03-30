@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbnbackground"
+
+    android:filterTouchesWhenObscured ="true"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+
+
+        >
+
+      <!--  <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+android:src="@drawable/icons32"
+
+             />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"/>
+       <!-- <ImageView
+            android:layout_width="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentBottom="true"
+
+
+           android:id="@+id/pad"
+            android:layout_height="70dp"
+
+           />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+
+            android:textSize="18sp"
+            android:id="@+id/section_text"
+
+            android:textStyle="bold"
+            android:text="O. Adewale"
+
+
+            />
+     <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+android:background="@drawable/home"
+            android:layout_below="@+id/section_text"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:id="@+id/home"
+            android:textSize="18sp"
+android:visibility="gone"
+
+            android:textStyle="bold"
+              android:text=""
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_he"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/nav_header_container"
+
+
+
+        >
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/drawerList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="0dp" />
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+

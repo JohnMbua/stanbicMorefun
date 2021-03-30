@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="left"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyMaterialTheme.AppBarOverlay">
+
+
+
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+
+                android:background="@color/white"
+                app:theme="@style/ToolbarStyle">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="160dp"
+                            android:layout_marginRight="60dp"
+                            android:contentDescription="Logo"
+
+                            android:layout_height="50dp"
+
+
+                            android:src="@drawable/newfmonielogo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="29dp"
+                            android:layout_height="25dp"
+                            android:filterTouchesWhenObscured ="true"
+                            android:layout_marginRight="20dp"
+
+                            android:background="@drawable/calendaricon"
+                            android:layout_below="@+id/textView7"
+
+
+
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+   <!-- <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/borderhmground"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+
+        app:stl_clickable="true"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="@color/colorPrimary"
+        app:stl_defaultTabTextHorizontalPadding="18dp"
+        app:stl_defaultTabTextMinWidth="0dp"
+        app:stl_defaultTabTextSize="12sp"
+        app:stl_distributeEvenly="true"
+        app:stl_dividerColor="#4D000000"
+        app:stl_dividerThickness="0dp"
+        app:stl_drawDecorationAfterTab="false"
+        app:stl_indicatorColor="@color/colorPrimaryDark"
+
+        app:stl_indicatorCornerRadius="18dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="36dp"
+        app:stl_overlineColor="#4D000000"
+        app:stl_overlineThickness="0dp"
+        app:stl_underlineColor="#4D000000"
+
+        app:stl_underlineThickness="0dp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/lyorder"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textcolorcircle"
+
+                android:layout_margin="10dp"
+                android:text="TRANSACTION"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:id="@+id/v1"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/lymapsvw"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textcolorcircle"
+                android:text="COMMISSION"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:visibility="gone"
+                android:id="@+id/v2"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/lyselcharttran"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/newselcharttran" />
+</LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+android:visibility="gone"
+        android:id="@+id/lyselchart"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/newselchart" />
+</LinearLayout>
+</LinearLayout>

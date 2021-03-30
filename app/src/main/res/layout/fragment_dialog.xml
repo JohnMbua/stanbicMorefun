@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:filterTouchesWhenObscured ="true"
+    android:layout_width="300dp" android:layout_height="200dp"
+    android:padding="30dp"
+    android:layout_gravity="center" android:orientation="vertical"  >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/lbl_your_name" android:text="Enter your Attendant Pin"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/serv" android:text="(Inbox Page)"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>
+    <EditText
+        android:id="@+id/txt_your_name"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"  android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:maxLength="5"
+
+    android:imeOptions="actionDone" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl3"
+        android:id="@+id/mybutton"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/mybutton"
+            android:padding="5dp"
+            android:text="CONFIRM"
+
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stanbicagent.com.stanbicagent.NL_WDLMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/newtoolbar" />
+
+            <LinearLayout
+                android:id="@+id/lylcal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lycal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/borderhmground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignRight="@+id/div1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/bg_red"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/div1"
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"
+                        android:layout_alignRight="@+id/tv3"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="45dp"
+                        android:background="@color/textcolorcircle" />
+
+                    <View
+                        android:id="@+id/div2"
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"
+                        android:layout_alignRight="@+id/tv"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="45dp"
+                        android:background="@color/textcolorcircle" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignRight="@+id/div2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/bg_transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1"
+                        android:textColor="@color/textcolorcircle"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="3"
+                        android:textColor="@color/textcolorcircle"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/div3"
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/tv3"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/textcolorcircle" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/div3"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="4"
+                        android:textColor="@color/textcolorcircle"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/div5"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="5"
+                        android:textColor="@color/textcolorcircle"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/div5"
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/tv4"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/textcolorcircle" />
+
+                    <TextView
+                        android:id="@+id/textV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="Proceed to fill all fields"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view34"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dip"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="10dip">
+
+                    <TextView
+                        android:id="@+id/txtinscard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_weight="1"
+                        android:text="PLEASE INSERT CARD"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl5"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dip"
+                    android:background="@color/nbkyellow"
+                    android:padding="5dp"
+                    android:text="CANCEL"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dip"
+                    android:background="@color/nbkyellow"
+                    android:padding="5dp"
+                    android:text="Test"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

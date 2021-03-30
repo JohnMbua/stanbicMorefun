@@ -1,0 +1,441 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:filterTouchesWhenObscured ="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <!--<ListView
+        android:id="@+id/lv1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:layout_height="wrap_content">
+
+        </ListView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:layout_height="0dp"
+        android:layout_weight="1"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+android:layout_marginBottom="250dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+android:id="@+id/layl"
+
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:layout_marginTop="10dp"
+                android:id="@+id/lylcal"
+
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+
+
+                    >
+
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/textViewacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="Select Plan"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415" />
+
+                    <EditText
+                        android:id="@+id/acc"
+                        android:layout_below="@+id/textViewacc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:ems="10"
+
+                        android:inputType="number" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+
+
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="Select Smart Card Number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3C2415" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_below="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:ems="10"
+
+                        android:inputType="number" />
+                </RelativeLayout>
+
+
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textVi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text="Depositor Name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/durat"
+                            android:layout_below="@+id/textVi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:ems="10"
+
+                            android:inputType="number" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textViewf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text="Depositor Number"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/dur"
+                            android:layout_below="@+id/textViewf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:ems="10"
+
+                            android:inputType="number" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/narr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text="Narration"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/ednarr"
+                            android:layout_below="@+id/narr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:ems="10"
+
+                            android:inputType="number" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rl4"
+                        android:layout_below="@+id/rl3"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/agpin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Agent PIN"
+                            android:textSize="18sp"
+
+
+
+
+                            android:textColor="@color/colorPrimary"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:clickable="true"
+
+
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+
+
+                        >
+
+
+
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+
+                            >
+                            <TextView
+                                android:id="@+id/textViewpnam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:text="Enter Payer Name:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C2415" />
+                            <EditText
+                                android:id="@+id/scodepnam"
+                                android:layout_below="@+id/textViewpnam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:ems="10"
+
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+
+                            >
+                            <TextView
+                                android:id="@+id/bnamebcd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C2415"
+                                android:text="Enter Last Name:"
+
+
+                                />
+                            <EditText
+                                android:id="@+id/lnam"
+                                android:layout_below="@+id/bnamebcd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:ems="10"
+
+                                />
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+
+                            >
+                            <TextView
+                                android:id="@+id/mobno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:text="Enter Mobile Number:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C2415" />
+
+                            <EditText
+                                android:id="@+id/mobnn"
+                                android:layout_below="@+id/mobno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:ems="10"
+
+                                android:inputType="numberDecimal" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+
+                            >
+                            <TextView
+                                android:id="@+id/idno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:text="Enter ID Number:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C2415" />
+
+                            <EditText
+                                android:id="@+id/edidno"
+                                android:layout_below="@+id/idno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:ems="10"
+
+                                android:inputType="numberDecimal" />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:text="OK"
+
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/nbkyellow" />
+
+                </LinearLayout>
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</RelativeLayout>

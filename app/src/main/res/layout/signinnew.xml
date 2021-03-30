@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/newfmonielogo" />
+
+                <TextView
+                    android:id="@+id/versname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Version 1.5.2"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="65"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_multiusers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select Attendant ID"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textcolorcircle" />
+
+                    <Spinner
+                        android:id="@+id/sp_att_id"
+                        style="@style/SpinnerAppTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bname">
+
+                    </Spinner>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/texpl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Please Enter Your Attendant PIN"
+                    android:textColor="@color/textcolorcircle"
+                    android:textSize="14sp" />
+
+                <com.andrognito.pinlockview.IndicatorDots
+                    android:id="@+id/indicator_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texpl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:dotDiameter="12dp"
+                    app:dotEmptyBackground="@drawable/empty_dot"
+                    app:dotFilledBackground="@drawable/bg_red" />
+
+                <com.andrognito.pinlockview.PinLockView
+                    android:id="@+id/pin_lock_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/indicator_dots"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    app:keypadButtonSize="55dp"
+
+                    app:keypadShowDeleteButton="true"
+                    app:keypadTextColor="@color/textcolorcircle"
+                    app:keypadTextSize="15dp" />
+
+                <Button
+                    android:id="@+id/signinn"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pin_lock_view"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/mybutton"
+                    android:text="OK"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+
+
+                    android:gravity="center"
+                    android:text="Get Help"
+                    android:textColor="@color/textcolorcircle"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Activate"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="Version 1.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

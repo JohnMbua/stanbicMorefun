@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:filterTouchesWhenObscured ="true"
+
+
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+
+        >
+
+      <!--  <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+android:src="@drawable/icons32"
+
+             />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentBottom="true"
+
+
+           android:id="@+id/pad"
+            android:layout_height="70dp"
+
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#3C2415"
+            android:layout_alignParentRight="true"
+
+            android:textSize="18sp"
+            android:id="@+id/section_text"
+
+            android:textStyle="bold"
+            android:text="Login "
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/section_text"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#3C2415"
+            android:layout_alignParentRight="true"
+            android:id="@+id/home"
+            android:textSize="18sp"
+
+
+            android:textStyle="bold"
+              android:text="Sign Out "
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#ccffffff"
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+
+        android:layout_marginTop="0dp" />
+
+
+</RelativeLayout>
+

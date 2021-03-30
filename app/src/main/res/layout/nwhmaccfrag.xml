@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured ="true"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/jksks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:elevation="2dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:background="@drawable/fbnbackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/greet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Good Morning O. Adewale"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+android:layout_marginTop="40dp"
+               android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dip"
+                android:padding="10dp"
+                android:clickable="true"
+
+
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="1dp"
+                card_view:cardElevation="2dp">
+            <RelativeLayout
+                android:id="@+id/rlagentaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlag"
+
+                android:background="@color/white"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hfjdj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="left"
+                    android:text="AGENT ACCOUNT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="80dp" />
+
+
+                <TextView
+                    android:id="@+id/currentbal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+android:layout_below="@+id/hfjdj"
+                    android:visibility="gone"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/fab_material_green_500"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/comm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+
+
+                    android:text="COMMISSION WALLET"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/accountbal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                  android:layout_below="@+id/comm"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/fab_material_green_500"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/comm"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/greenbutton"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+
+                    android:layout_below="@+id/hfjdj"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+
+
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/greenbutton"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+     </FrameLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footerr"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+android:layout_below="@+id/jksks"
+
+       >
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="7dp"
+
+            android:horizontalSpacing="7dp"
+            android:stretchMode="columnWidth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:numColumns="2" >
+        </GridView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@+id/gridView1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="MANAGE ACCOUNT"
+            android:layout_marginTop="10dp"
+            android:id="@+id/signinn"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/capsule"
+
+            android:layout_height="50dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@drawable/fbnbackground"
+            android:gravity="bottom">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rll"
+                android:background="@color/grey"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType="fitXY"
+                android:adjustViewBounds ="true"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:id="@+id/prgbar"
+                android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/rll"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text=" \u00a9 2016 Access Bank of Nigeria Limited. All Rights Reserved."
+android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Last Login:"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+</RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+

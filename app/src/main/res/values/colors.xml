@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#00b47c</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="colorPrimary">#00539D</color>
+    <color name="fab_material_blue_900">#FE5936</color>
+    <color name="divcolor">#939393</color>
+    <color name="colorPrimaryDark">#162D4B</color>
+    <drawable name="red">#7f00</drawable>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="nbkyellow">#F16112</color>
+    <color name="nbklightblue">#33C9C9</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="lightpink">#CA226B</color>
+    <color name="borderhmground">#F5F5F5</color>
+    <color name="textcolorcircle">#343434</color>
+    <color name="nbklightbrown">#766151</color>
+    <color name="nbkdarkbrown">#3C2415</color>
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+    <color name="blue_btn_bg_color">#001C5C</color>
+    <color name="blue_btn_bg_pressed_color">#001C5C</color>
+    <color name="gray_btn_bg_color">#7f00</color>
+
+    <color name="red">#FF0000</color>
+</resources>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:filterTouchesWhenObscured ="true"
+    android:background="#ccffffff"
+
+
+
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/nbkdarkbrown"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:text="Personalise"
+
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:id="@+id/txt2"
+
+
+            android:src="@drawable/thyellow"
+            android:layout_centerInParent="true"
+            android:layout_width="45dp"
+            android:text="Menu"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/bg_red"
+            android:layout_alignRight="@+id/txt3"
+
+            android:layout_marginRight="55dp"
+
+            android:textColor="@color/nbkdarkbrown"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/txt3"
+
+            android:layout_width="45dp"
+
+            android:text="Widgets"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:background="@drawable/bg_red"
+
+
+            android:layout_alignRight="@+id/txt4"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="55dp"
+
+            android:textColor="@color/nbkdarkbrown"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/txt4"
+
+            android:layout_width="45dp"
+            android:text="Top 3"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:background="@drawable/bg_red"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="55dp"
+
+
+            android:textColor="@color/nbkdarkbrown"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/txt5"
+
+            android:layout_width="45dp"
+            android:text="News"
+            android:textSize="9sp"
+
+            android:gravity="center"
+            android:background="@drawable/bg_red"
+
+            android:layout_alignLeft="@+id/txt4"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="55dp"
+            android:textColor="@color/nbkdarkbrown"
+            android:layout_height="45dp" />
+    </RelativeLayout>
+</RelativeLayout>
+    </RelativeLayout>

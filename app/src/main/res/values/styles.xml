@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/fab_material_blue_900</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:windowBackground">@color/grey</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+    <style name="RedTheme" parent="RedTheme.Base">
+
+    </style>
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorPrimary</item>
+    </style>
+    <style name="RedTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/nbkdarkbrown</item>
+        <item name="colorPrimaryDark">@color/nbkdarkbrown</item>
+        <item name="colorAccent">@color/nbkdarkbrown</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+
+    </style>
+
+
+    <style name="GreenTheme" parent="GreenTheme.Base">
+
+    </style>
+
+    <style name="GreenTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/nbkdarkbrown</item>
+        <item name="colorPrimaryDark">@color/nbkdarkbrown</item>
+        <item name="colorAccent">@color/nbkdarkbrown</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+
+    </style>
+
+
+    <style name="BlueTheme" parent="BlueTheme.Base">
+
+    </style>
+
+    <style name="BlueTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/nbkdarkbrown</item>
+        <item name="colorPrimaryDark">@color/nbkdarkbrown</item>
+        <item name="colorAccent">@color/nbkdarkbrown</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+
+    </style>
+
+    <style name="SpinnerAppTheme" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/apptheme_btn_radio_holo_light</item>
+    </style>
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--  <style name="Theme.App" parent="Theme.Sherlock.Light">
+          <item name="actionBarStyle">@style/Theme.App.ActionBar</item>
+      </style>
+
+      <style name="Theme.App.ActionBar" parent="Widget.Sherlock.ActionBar">
+          <item name="displayOptions">showHome|useLogo</item>
+      </style>-->
+
+
+</resources>

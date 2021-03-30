@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nat.mobile.Splash"
+    android:filterTouchesWhenObscured ="true"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="80dp"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/fmonifour" />
+
+        <TextView
+            android:id="@+id/gm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:text="Welcome"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+
+            android:layout_marginTop="50dp"
+            android:layout_weight=".50"
+
+            />
+
+<ImageView
+    android:id="@+id/img"
+    android:layout_width="192dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+
+
+    android:layout_centerVertical="true"
+    android:background="@drawable/newfmonielogo"
+    android:layout_weight=".10"
+    />
+</RelativeLayout>
+
+    </RelativeLayout>
+ 
+</RelativeLayout>

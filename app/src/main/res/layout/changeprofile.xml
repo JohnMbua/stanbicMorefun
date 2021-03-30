@@ -1,0 +1,260 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured ="true"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:filterTouchesWhenObscured ="true"
+        android:orientation="vertical" >
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dip"
+
+                android:orientation="vertical" >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:clickable="true"
+
+
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="1dp">
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+
+
+                    >
+
+
+
+
+
+                        />
+
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/bnamebc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415"
+                            android:text="Enter New Account Name"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/phonec"
+                            android:layout_below="@+id/bnamebc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:ems="10"
+                            android:hint="Patrick Kemboi"
+
+
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text="Enter New Id Number"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/phone"
+                            android:layout_below="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:hint="30000000:"
+                            android:ems="10"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text=" Enter New Email Address"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/phonexa"
+                            android:layout_below="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:hint="pkemboi@gmail.com"
+                            android:ems="10"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text="Change Mobile Number (1)"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/phoneds"
+                            android:layout_below="@+id/textView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:hint="+254366666666"
+                            android:ems="10"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+
+                        >
+                        <TextView
+                            android:id="@+id/textView234"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:text=" Change Mobile Number (2)"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3C2415" />
+
+                        <EditText
+                            android:id="@+id/phonexax"
+                            android:layout_below="@+id/textView234"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:hint="+254726666666"
+                            android:ems="10"
+
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="#3C2415"
+                        android:padding="5dp"
+                        android:text="Change Profile"
+
+                        android:layout_marginTop="10dip"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+
+ >
+
+
+                    </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

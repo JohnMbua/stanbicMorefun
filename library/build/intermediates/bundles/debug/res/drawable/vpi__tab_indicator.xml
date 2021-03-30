@@ -1,0 +1,58 @@
+package com.zenithbank.zenithagent;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.preference.PreferenceManager;
+import androidx.appcompat.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.newland.mtype.ModuleType;
+import com.newland.mtype.ProcessTimeoutException;
+import com.newland.mtype.event.DeviceEventListener;
+import com.newland.mtype.module.common.cardreader.CommonCardType;
+import com.newland.mtype.module.common.cardreader.K21CardReader;
+import com.newland.mtype.module.common.cardreader.K21CardReaderEvent;
+import com.newland.mtype.module.common.cardreader.OpenCardReaderResult;
+import com.newland.mtype.module.common.cardreader.SearchCardRule;
+import com.newland.mtype.module.common.emv.AIDConfig;
+import com.newland.mtype.module.common.emv.EmvModule;
+import com.newland.mtype.util.ISOUtils;
+
+import java.util.concurrent.TimeUnit;
+
+import newland.device.N900Device;
+import security.SecurityLayer;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
+import static com.zenithbank.zenithagent.ApplicationConstants.country_code;
+import static com.zenithbank.zenithagent.ApplicationConstants.currency_code;
+import static com.zenithbank.zenithagent.ApplicationConstants.terminal_capability;
+
+public class NL_CEVA_CardWdlInsCard extends BaseActivity implements View.OnClickListener {
+    ProgressDialog pDialog;
+    Button btnsub, btn_test;
+    TextView txtinscard;
+    static N900Device n900Device;
+    private K21CardReader cardReader;
+    private EmvModule emvModule;
+    String txn_amount = "";
+    ProgressDialog prgDialog;
+    int force_online = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.nl_activity_card_transfer_insert_card);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        n900Device = N900Device.getInstance(this);
+        processingUnLock();
+        c

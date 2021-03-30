@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "833922213912",
+    "firebase_url": "https://zenith-6ac88.firebaseio.com",
+    "project_id": "zenith-6ac88",
+    "storage_bucket": "zenith-6ac88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833922213912:android:73858e11c40f8087",
+        "android_client_info": {
+          "package_name": "com.stanbicagent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833922213912-umifdceurqi5l8jk8nrlnrfdfvn5du6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA46XVwsn29l841hJVW7FPZXKRkD9-70x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833922213912-umifdceurqi5l8jk8nrlnrfdfvn5du6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833922213912:android:b9af0b28b1046a05",
+        "android_client_info": {
+          "package_name": "com.stanbicagent.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833922213912-umifdceurqi5l8jk8nrlnrfdfvn5du6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA46XVwsn29l841hJVW7FPZXKRkD9-70x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833922213912-umifdceurqi5l8jk8nrlnrfdfvn5du6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

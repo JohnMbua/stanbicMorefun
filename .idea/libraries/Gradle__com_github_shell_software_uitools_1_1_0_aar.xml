@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.shell-software:uitools:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1718a5c07cea6f2d5a80345081b2f417/uitools-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1718a5c07cea6f2d5a80345081b2f417/uitools-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shell-software/uitools/1.1.0/499a6f4c370c52f57d3dcdf76d7bd72817415e70/uitools-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shell-software/uitools/1.1.0/54491914dfef31b0eac4b2d78583e129ea832be7/uitools-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
